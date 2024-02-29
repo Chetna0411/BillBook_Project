@@ -1,0 +1,36 @@
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class = "col-md-6">
+            <div class = "card">
+<div class ="text-center">
+    <h1>Sign Up</h1>
+    <h5> Register Yourself !!</h5>
+</div>
+<form (ngSubmit) = "userSignUp()">
+        <div class="mb-3">
+            <label for="username" class="form-label">Full Name</label>
+            <input type="text" [(ngModel)]= "user.username"class="form-control" id="username" name="username"aria-describedby="FullNameHelp">
+            <div id="FullNameHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="mobileno" class="form-label">Mobile Number</label>
+            <input type="number" [(ngModel)]= "user.mobileno" class="form-control" id="mobileno" name="mobileno">
+          </div>
+        <div class="mb-3">
+          <label for="useremail" class="form-label">Email address</label>
+          <input type="email" [(ngModel)]= "user.useremail" class="form-control" id="useremail" name="useremail" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+        </div>
+       <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+      <a style="color:black; margin-top:20px" routerLink="/login">Already Register? Click to Login</a>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
